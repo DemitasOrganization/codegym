@@ -1,0 +1,29 @@
+# Build / run artifacts
+*.o
+*.obj
+a.out
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# JS / Node
+node_modules/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
