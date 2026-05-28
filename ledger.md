@@ -27,6 +27,7 @@ rows below are illustrative and would not appear in a real fresh repo.
 |------|-------|---------|------------|------|-------|----------|
 | 2026-05-24 | python | list-comprehensions | beginner | runnable | 5 | idiomatic single comprehension, filter+transform, no append loop; all edges passed |
 | 2026-05-25 | python | enumerate | beginner | runnable | 4 | enumerate+start= perfect from the start; needed a hint on append vs index-assign into empty list (IndexError) |
+| 2026-05-28 | python | zip | beginner | runnable | 5 | idiomatic zip-in-comprehension; all 5 edges incl. both mismatch directions, relied on stop-at-shortest with no special-casing; only a PEP8 comma-spacing nit |
 <!-- 2026-05-24 | python | generators | intermediate | runnable | 4 | clean, but reached for a list where a generator was the point |
 <!-- 2026-05-25 | c      | pointer-arithmetic | beginner | runnable | 3 | off-by-one on the terminator; forgot the NUL byte |
 <!-- 2026-05-26 | react  | useEffect-cleanup | beginner | framework | 5 | nailed the cleanup return; rubric fully met -->
