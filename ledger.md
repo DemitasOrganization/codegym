@@ -26,6 +26,7 @@ rows below are illustrative and would not appear in a real fresh repo.
 | date | track | concept | difficulty | kind | score | takeaway |
 |------|-------|---------|------------|------|-------|----------|
 | 2026-05-24 | python | list-comprehensions | beginner | runnable | 5 | idiomatic single comprehension, filter+transform, no append loop; all edges passed |
+| 2026-05-25 | python | enumerate | beginner | runnable | 4 | enumerate+start= perfect from the start; needed a hint on append vs index-assign into empty list (IndexError) |
 <!-- 2026-05-24 | python | generators | intermediate | runnable | 4 | clean, but reached for a list where a generator was the point |
 <!-- 2026-05-25 | c      | pointer-arithmetic | beginner | runnable | 3 | off-by-one on the terminator; forgot the NUL byte |
 <!-- 2026-05-26 | react  | useEffect-cleanup | beginner | framework | 5 | nailed the cleanup return; rubric fully met -->
