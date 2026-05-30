@@ -29,6 +29,7 @@ rows below are illustrative and would not appear in a real fresh repo.
 | 2026-05-25 | python | enumerate | beginner | runnable | 4 | enumerate+start= perfect from the start; needed a hint on append vs index-assign into empty list (IndexError) |
 | 2026-05-28 | python | zip | beginner | runnable | 5 | idiomatic zip-in-comprehension; all 5 edges incl. both mismatch directions, relied on stop-at-shortest with no special-casing; only a PEP8 comma-spacing nit |
 | 2026-05-30 | python | sorted-key | beginner | runnable | 5 | used unbound str.lower as key (not a lambda); relied on sort stability for the equal-key tie-break with no special-casing; all 5 edges, no mutation |
+| 2026-05-30 | python | capstone-leaderboard | beginner+ | runnable | 4 | composed all 4 concepts (zip+tuple-key+enumerate(start=1)+comprehension) from hints; nailed -score descending. Tests passed but tie-break was case-SENSITIVE (raw p[0] not p[0].lower()) — spec missed, tests only passed by luck of casing. Also: shadowed builtin `tuple`, `== None`, missed result[:top]/[:None] slice trick |
 <!-- 2026-05-24 | python | generators | intermediate | runnable | 4 | clean, but reached for a list where a generator was the point |
 <!-- 2026-05-25 | c      | pointer-arithmetic | beginner | runnable | 3 | off-by-one on the terminator; forgot the NUL byte |
 <!-- 2026-05-26 | react  | useEffect-cleanup | beginner | framework | 5 | nailed the cleanup return; rubric fully met -->

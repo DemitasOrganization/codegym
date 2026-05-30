@@ -31,7 +31,6 @@ Use `sorted` with a `key=`. Do not lowercase the actual words in the result,
 and do not sort in place with `.sort()`.
 """
 
-
 def sort_ci(words):
     return sorted(words, key=str.lower)
 
