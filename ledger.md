@@ -20,18 +20,11 @@ Format:
 - **takeaway** — one short note. This is the load-bearing field: it's what
   feeds weakspots and what makes "you've missed edges 3 of the last 5" possible.
 
-This file ships **empty**. A fresh user starts with no history. The example
-rows below are illustrative and would not appear in a real fresh repo.
+This file ships **empty**. A fresh user starts with no history. The commented
+rows below are illustrative and are never read as history.
 
 | date | track | concept | difficulty | kind | score | takeaway |
 |------|-------|---------|------------|------|-------|----------|
-| 2026-05-24 | python | list-comprehensions | beginner | runnable | 5 | idiomatic single comprehension, filter+transform, no append loop; all edges passed |
-| 2026-05-25 | python | enumerate | beginner | runnable | 4 | enumerate+start= perfect from the start; needed a hint on append vs index-assign into empty list (IndexError) |
-| 2026-05-28 | python | zip | beginner | runnable | 5 | idiomatic zip-in-comprehension; all 5 edges incl. both mismatch directions, relied on stop-at-shortest with no special-casing; only a PEP8 comma-spacing nit |
-| 2026-05-30 | python | sorted-key | beginner | runnable | 5 | used unbound str.lower as key (not a lambda); relied on sort stability for the equal-key tie-break with no special-casing; all 5 edges, no mutation |
-| 2026-05-30 | python | capstone-leaderboard | beginner+ | runnable | 4 | composed all 4 concepts (zip+tuple-key+enumerate(start=1)+comprehension) from hints; nailed -score descending. Tests passed but tie-break was case-SENSITIVE (raw p[0] not p[0].lower()) — spec missed, tests only passed by luck of casing. Also: shadowed builtin `tuple`, `== None`, missed result[:top]/[:None] slice trick |
-| 2026-05-30 | python | capstone-paginate | beginner+ | runnable | 5 | clean practical web paginator; correct (page-1)*per_page slice, math.ceil for page count, all 6 edges incl. past-end (empty slice) & empty set, no mutation. Chose math.ceil over // idiom — readable, fine. Only a style nit (has_next reads backwards). Solid no-tricks code |
-| 2026-05-31 | python | decorators | beginner | runnable | 5 | FastAPI-motivated (@app.get mechanism); textbook wrapper — *args/**kwargs collect+forward, return passthrough, counter on the wrapper object (not a local), init outside wrapper so it persists. Reached for @functools.wraps UNPROMPTED (the part people skip). All asserts pass. Ready to move to intermediate |
 <!-- 2026-05-24 | python | generators | intermediate | runnable | 4 | clean, but reached for a list where a generator was the point |
 <!-- 2026-05-25 | c      | pointer-arithmetic | beginner | runnable | 3 | off-by-one on the terminator; forgot the NUL byte |
 <!-- 2026-05-26 | react  | useEffect-cleanup | beginner | framework | 5 | nailed the cleanup return; rubric fully met -->
