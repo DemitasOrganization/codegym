@@ -63,3 +63,7 @@ PRs that add `getting-started/` exemplars for more tracks are welcome — they s
 the format and teaching quality for everyone, so keep them tight: one concept,
 a real teach block with an inline "how", and fixed evaluation criteria
 (test cases for runnable, a rubric for framework).
+
+## License
+
+MIT — see [LICENSE](LICENSE). Clone it, drill with it, make it yours.
